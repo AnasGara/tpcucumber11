@@ -35,7 +35,6 @@ public class StepDefinition {
         driver = new FirefoxDriver(firefoxOptions);
         driver.get("https://www.google.com");
         // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
     }
     @When("I lookup the word {string}")
     public void i_lookup_the_word(String string) {
@@ -44,13 +43,11 @@ public class StepDefinition {
         driver.findElement(By.name("btnK")).click();
 
         // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
     }
     @Then("Search results display the word {string}")
     public void search_results_display_the_word(String string) {
         // Write code here that turns the phrase above into concrete actions
 
         System.out.println(driver.getTitle().contains(string));
-        throw new io.cucumber.java.PendingException();
     }
 }

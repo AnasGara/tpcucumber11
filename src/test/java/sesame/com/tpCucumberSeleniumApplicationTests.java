@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources"},
         glue ={""},
-        plugin = {"json:target/cucmber.json"}
+        plugin = {"json:target/cucumber.json"}
 )
 public class tpCucumberSeleniumApplicationTests {
 
